@@ -1,0 +1,522 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Fitness | Premium Gym & Training Center | Vadodara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0a2463; --primary-light: #1e3a8a; --accent: #3b82f6;
+            --gold: #c0a062; --dark: #0a0a0a; --darker: #050505;
+            --gray: #1a1a1a; --light-gray: #f8fafc; --text: #1e293b; --text-muted: #64748b;
+            --white: #ffffff; --off-white: #f1f5f9; --border: #e2e8f0;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; }
+        h1, h2, h3, h4, .brand { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+        .navbar { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(255,255,255,0.98); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding: 0.8rem 0; box-shadow: 0 2px 20px rgba(0,0,0,0.05); }
+        .nav-container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.8rem; text-decoration: none; }
+        .logo-icon { width: 45px; height: 45px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 4px 15px rgba(10,36,99,0.3); }
+        .logo-text { font-family: 'Oswald', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--dark); letter-spacing: 2px; }
+        .logo-text span { color: var(--primary); }
+        .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+        .nav-links a { color: var(--text); text-decoration: none; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; transition: color 0.3s; position: relative; }
+        .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--primary); transition: width 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-links a:hover::after { width: 100%; }
+        .mobile-menu { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+        .mobile-menu span { width: 25px; height: 2px; background: var(--dark); transition: 0.3s; }
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; background: linear-gradient(135deg, #0a2463 0%, #1e3a8a 50%, #0f172a 100%); overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; background: radial-gradient(circle at 20% 50%, rgba(59,130,246,0.2) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(192,160,98,0.1) 0%, transparent 50%); }
+        .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.3; }
+        .hero-content { text-align: center; z-index: 2; padding: 2rem; max-width: 900px; }
+        .hero-badge { display: inline-block; padding: 0.5rem 1.5rem; border: 1px solid var(--gold); color: var(--gold); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 2rem; animation: pulse 2s infinite; background: rgba(192,160,98,0.1); }
+        @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.6; } }
+        .hero h1 { font-size: clamp(3rem, 8vw, 6rem); font-weight: 700; line-height: 1; margin-bottom: 1rem; background: linear-gradient(135deg, #fff 0%, #93c5fd 50%, var(--gold) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hero-subtitle { font-size: 1.3rem; color: rgba(255,255,255,0.7); margin-bottom: 3rem; font-weight: 300; letter-spacing: 2px; }
+        .hero-stats { display: flex; justify-content: center; gap: 4rem; margin-bottom: 3rem; flex-wrap: wrap; }
+        .stat-item { text-align: center; }
+        .stat-number { font-family: 'Oswald', sans-serif; font-size: 2.5rem; font-weight: 700; color: var(--gold); display: block; }
+        .stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 2px; }
+        .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 1rem 2.5rem; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; border: none; cursor: pointer; transition: all 0.3s; text-decoration: none; display: inline-block; border-radius: 4px; }
+        .btn-primary { background: linear-gradient(135deg, var(--gold), #a0845c); color: var(--dark); box-shadow: 0 4px 20px rgba(192,160,98,0.4); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 30px rgba(192,160,98,0.6); }
+        .btn-outline { background: transparent; color: white; border: 2px solid rgba(255,255,255,0.3); }
+        .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+        .scroll-indicator { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.5); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; animation: bounce 2s infinite; }
+        @keyframes bounce { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-10px); } }
+        .section { padding: 6rem 2rem; position: relative; }
+        .section-header { text-align: center; margin-bottom: 4rem; }
+        .section-tag { color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 1rem; display: block; font-weight: 600; }
+        .section-title { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; margin-bottom: 1rem; color: var(--dark); }
+        .section-desc { color: var(--text-muted); max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6; }
+        .pricing-section { background: linear-gradient(135deg, var(--off-white), var(--white)); padding: 6rem 2rem; }
+        .pricing-card { max-width: 500px; margin: 0 auto; background: var(--white); border: 2px solid var(--gold); border-radius: 16px; padding: 3rem; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.1); position: relative; overflow: hidden; }
+        .pricing-card::before { content: 'MOST POPULAR'; position: absolute; top: 0; right: 0; background: var(--primary); color: white; padding: 0.5rem 2rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; transform: translate(30%, 100%) rotate(45deg); }
+        .pricing-card h3 { font-size: 1.2rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 1rem; }
+        .price { font-family: 'Oswald', sans-serif; font-size: 4rem; color: var(--primary); font-weight: 700; line-height: 1; }
+        .price span { font-size: 1.2rem; color: var(--text-muted); font-weight: 400; }
+        .price-features { list-style: none; margin: 2rem 0; text-align: left; }
+        .price-features li { padding: 0.8rem 0; border-bottom: 1px solid var(--border); color: var(--text); display: flex; align-items: center; gap: 0.8rem; }
+        .price-features li::before { content: '✓'; color: var(--gold); font-weight: 700; font-size: 1.2rem; }
+        .heat-alert { background: linear-gradient(135deg, #fef3c7, #fffbeb); border: 1px solid rgba(251,191,36,0.3); padding: 3rem 2rem; position: relative; overflow: hidden; }
+        .heat-alert::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), #f59e0b, var(--gold)); animation: shimmer 3s infinite; background-size: 200% 100%; }
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+        .alert-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .alert-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .alert-title { font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem; }
+        .alert-subtitle { color: #92400e; font-size: 1.1rem; margin-bottom: 1.5rem; }
+        .alert-dates { background: rgba(251,191,36,0.1); border: 1px solid rgba(251,191,36,0.2); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .alert-dates strong { color: #92400e; font-size: 1.2rem; }
+        .timing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .timing-card { background: var(--white); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--gold); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .timing-card h4 { color: var(--primary); margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .timing-card p { color: var(--text); font-size: 1.2rem; font-weight: 600; }
+        .trainers { background: var(--off-white); }
+        .trainers-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; }
+        .trainer-card { background: var(--white); border-radius: 12px; overflow: hidden; position: relative; transition: transform 0.3s; border: 1px solid var(--border); box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .trainer-card:hover { transform: translateY(-5px); box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        .trainer-card.featured { border: 2px solid var(--gold); position: relative; }
+        .trainer-card.featured::before { content: 'OWNER & HEAD TRAINER'; position: absolute; top: 1rem; right: -2.5rem; background: var(--primary); color: white; padding: 0.3rem 3rem; font-size: 0.7rem; font-weight: 700; transform: rotate(45deg); z-index: 2; letter-spacing: 1px; }
+        .trainer-img { height: 350px; background: linear-gradient(135deg, var(--light-gray), var(--off-white)); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+        .trainer-img::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100px; background: linear-gradient(to top, var(--white), transparent); }
+        .trainer-avatar { width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--accent)); display: flex; align-items: center; justify-content: center; font-size: 3rem; z-index: 1; border: 4px solid var(--white); box-shadow: 0 0 30px rgba(10,36,99,0.2); }
+        .trainer-info { padding: 2rem; text-align: center; }
+        .trainer-name { font-size: 1.5rem; color: var(--dark); margin-bottom: 0.5rem; }
+        .trainer-role { color: var(--primary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; font-weight: 600; }
+        .trainer-bio { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
+        .trainer-contact { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+        .trainer-phone { color: var(--primary); font-size: 1.1rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; }
+        .equipment { background: var(--white); }
+        .equipment-grid { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .equipment-card { position: relative; height: 400px; border-radius: 12px; overflow: hidden; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .equipment-card-bg { position: absolute; inset: 0; background: linear-gradient(135deg, var(--light-gray), var(--off-white)); transition: transform 0.5s; }
+        .equipment-card:hover .equipment-card-bg { transform: scale(1.05); }
+        .equipment-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,36,99,0.95) 0%, rgba(10,36,99,0.5) 50%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 2rem; }
+        .equipment-card h3 { font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+        .equipment-card p { color: rgba(255,255,255,0.8); font-size: 0.95rem; }
+        .equipment-icon { position: absolute; top: 2rem; right: 2rem; width: 50px; height: 50px; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+        .testimonials { background: linear-gradient(135deg, var(--primary), var(--primary-light)); padding: 6rem 2rem; }
+        .testimonials .section-title { color: white; }
+        .testimonials .section-desc { color: rgba(255,255,255,0.8); }
+        .testimonials-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .testimonial-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 2rem; color: white; }
+        .testimonial-stars { color: var(--gold); font-size: 1.2rem; margin-bottom: 1rem; }
+        .testimonial-text { font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem; font-style: italic; }
+        .testimonial-author { font-weight: 600; font-size: 0.9rem; }
+        .testimonial-role { font-size: 0.8rem; opacity: 0.7; }
+        .rating-section { background: var(--white); padding: 4rem 2rem; text-align: center; }
+        .rating-big { font-family: 'Oswald', sans-serif; font-size: 5rem; color: var(--gold); font-weight: 700; }
+        .rating-stars { color: var(--gold); font-size: 2rem; margin: 1rem 0; }
+        .rating-count { color: var(--text-muted); font-size: 1.1rem; }
+        .location { background: var(--off-white); position: relative; }
+        .location-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .location-info h3 { font-size: 2rem; color: var(--dark); margin-bottom: 1.5rem; }
+        .location-detail { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
+        .location-icon { width: 50px; height: 50px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; color: white; }
+        .location-detail h4 { color: var(--dark); font-size: 1.1rem; margin-bottom: 0.3rem; }
+        .location-detail p { color: var(--text-muted); line-height: 1.5; }
+        .map-container { background: var(--white); border-radius: 12px; height: 400px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .map-placeholder { text-align: center; padding: 2rem; }
+        .map-placeholder a { display: inline-block; margin-top: 1rem; padding: 0.8rem 1.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.3s; }
+        .map-placeholder a:hover { background: var(--primary-light); }
+        .contact { background: linear-gradient(180deg, var(--primary), var(--primary-light)); border-top: 1px solid var(--border); }
+        .contact-container { max-width: 800px; margin: 0 auto; text-align: center; }
+        .contact .section-title { color: white; }
+        .contact .section-tag { color: var(--gold); }
+        .contact p { color: rgba(255,255,255,0.8); }
+        .contact-phone { font-family: 'Oswald', sans-serif; font-size: 3rem; color: var(--gold); text-decoration: none; display: inline-block; margin: 1rem 0; transition: color 0.3s; }
+        .contact-phone:hover { color: white; }
+        .contact-buttons { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
+        .contact-btn { padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s; }
+        .contact-btn.whatsapp { background: #25d366; color: white; }
+        .contact-btn.call { background: var(--gold); color: var(--dark); }
+        .contact-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+        .footer { background: var(--dark); padding: 3rem 2rem; border-top: 1px solid var(--border); text-align: center; }
+        .footer-logo { font-family: 'Oswald', sans-serif; font-size: 2rem; color: white; margin-bottom: 1rem; }
+        .footer-logo span { color: var(--gold); }
+        .footer p { color: var(--text-muted); font-size: 0.9rem; }
+        .footer-social { display: flex; justify-content: center; gap: 1rem; margin: 1.5rem 0; }
+        .social-link { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: all 0.3s; }
+        .social-link:hover { border-color: var(--gold); color: var(--gold); background: rgba(192,160,98,0.1); }
+        .floating-cta { position: fixed; bottom: 2rem; right: 2rem; z-index: 999; display: flex; flex-direction: column; gap: 0.5rem; }
+        .floating-btn { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: transform 0.3s; }
+        .floating-btn:hover { transform: scale(1.1); }
+        .floating-btn.call { background: var(--primary); }
+        .floating-btn.whatsapp { background: #25d366; }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .awards { background: var(--white); padding: 4rem 2rem; text-align: center; }
+        .awards-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
+        .award-item { padding: 2rem; border: 1px solid var(--border); border-radius: 12px; transition: all 0.3s; }
+        .award-item:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .award-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .award-title { font-family: 'Oswald', sans-serif; font-size: 1.2rem; color: var(--dark); margin-bottom: 0.5rem; }
+        .award-desc { color: var(--text-muted); font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu { display: flex; }
+            .alert-container, .location-container { grid-template-columns: 1fr; }
+            .timing-grid { grid-template-columns: 1fr; }
+            .hero-stats { gap: 2rem; }
+            .contact-phone { font-size: 2rem; }
+            .floating-cta { bottom: 1rem; right: 1rem; }
+            .pricing-card::before { transform: translate(25%, 80%) rotate(45deg); }
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--off-white); }
+        ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary-light); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">🔥</div>
+                <div class="logo-text">PHOENIX <span>FITNESS</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#timing">Timing</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#equipment">Equipment</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">⭐ #1 Gym on Bajwa Road</div>
+            <h1>No Pain,<br>No Gain</h1>
+            <p class="hero-subtitle">Premium Fitness Center | Vadodara's Finest Training Destination</p>
+            <div class="hero-stats">
+                <div class="stat-item"><span class="stat-number">30+</span><span class="stat-label">Premium Machines</span></div>
+                <div class="stat-item"><span class="stat-number">2</span><span class="stat-label">Expert Trainers</span></div>
+                <div class="stat-item"><span class="stat-number">7/7</span><span class="stat-label">Days Open</span></div>
+            </div>
+            <div class="hero-cta">
+                <a href="tel:7041098601" class="btn btn-primary">Call Now</a>
+                <a href="https://wa.me/917041098601" class="btn btn-outline">WhatsApp Us</a>
+            </div>
+        </div>
+        <div class="scroll-indicator"><span>Scroll</span><span>↓</span></div>
+    </section>
+
+    <section class="rating-section">
+        <div class="fade-in">
+            <div class="rating-big">4.9</div>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+            <div class="rating-count">Based on 200+ Google Reviews</div>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <div class="section-header fade-in">
+            <span class="section-tag">Membership</span>
+            <h2 class="section-title">Premium Pricing</h2>
+            <p class="section-desc">Unbeatable value at Bajwa Road. Best gym in this price range.</p>
+        </div>
+        <div class="pricing-card fade-in">
+            <h3>Monthly Membership</h3>
+            <div class="price">₹1,200<span>/month</span></div>
+            <p style="color: var(--text-muted); margin: 1rem 0;">Best value gym on Bajwa Road</p>
+            <ul class="price-features">
+                <li>Full access to 30+ premium machines</li>
+                <li>Expert guidance from supportive trainers</li>
+                <li>Strength & cardio zones</li>
+                <li>Functional training area</li>
+                <li>Stretching & recovery zone</li>
+                <li>Clean, air-conditioned facility</li>
+                <li>Flexible morning & evening timings</li>
+            </ul>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem; font-style: italic;">Personal Training available at separate charges</p>
+            <a href="tel:7041098601" class="btn btn-primary" style="margin-top: 1.5rem; display: block; width: 100%;">Join Now</a>
+        </div>
+    </section>
+
+    <section class="section heat-alert" id="timing">
+        <div class="alert-container fade-in">
+            <div>
+                <div class="alert-icon">☀️</div>
+                <h2 class="alert-title">Summer Schedule Alert</h2>
+                <p class="alert-subtitle">Due to Increasing Heat — Special Timings</p>
+                <div class="alert-dates">
+                    <strong>📅 June 17, 2026 — June 30, 2026</strong>
+                    <p style="margin-top: 0.5rem; color: var(--text-muted);">Adjusted hours for your safety and comfort during the heatwave.</p>
+                </div>
+            </div>
+            <div class="timing-grid">
+                <div class="timing-card">
+                    <h4>🌅 Morning Session</h4>
+                    <p>Regular Hours</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Standard timing as usual</p>
+                </div>
+                <div class="timing-card">
+                    <h4>🌙 Evening Session</h4>
+                    <p>6:00 PM — 9:40 PM</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Extended evening hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section trainers" id="trainers">
+        <div class="section-header fade-in">
+            <span class="section-tag">Meet The Team</span>
+            <h2 class="section-title">Expert Trainers</h2>
+            <p class="section-desc">Highly supportive and professional trainers dedicated to your fitness journey.</p>
+        </div>
+        <div class="trainers-grid">
+            <div class="trainer-card featured fade-in">
+                <div class="trainer-img"><div class="trainer-avatar">👑</div></div>
+                <div class="trainer-info">
+                    <h3 class="trainer-name">Jignesh Adiyal</h3>
+                    <p class="trainer-role">Owner & Head Trainer</p>
+                    <p class="trainer-bio">The visionary behind Phoenix Fitness. With extensive experience in bodybuilding and fitness training, Jignesh leads with passion, dedication, and a personal touch to help every member achieve their transformation goals.</p>
+                    <div class="trainer-contact"><a href="tel:7041098601" class="trainer-phone">📞 70410 98601</a></div>
+                </div>
+            </div>
+            <div class="trainer-card fade-in">
+                <div class="trainer-img"><div class="trainer-avatar">💪</div></div>
+                <div class="trainer-info">
+                    <h3 class="trainer-name">Arshdeep Singh Rajput</h3>
+                    <p class="trainer-role">Professional Trainer</p>
+                    <p class="trainer-bio">A dedicated and kind fitness expert committed to bringing out the best in every athlete. Arshdeep specializes in strength training, conditioning, and personalized workout programs with a supportive approach.</p>
+                    <div class="trainer-contact"><a href="tel:7041098601" class="trainer-phone">📞 Contact via Gym</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section equipment" id="equipment">
+        <div class="section-header fade-in">
+            <span class="section-tag">Our Facility</span>
+            <h2 class="section-title">World-Class Equipment</h2>
+            <p class="section-desc">30+ premium machines and free weights for every level of athlete.</p>
+        </div>
+        <div class="equipment-grid">
+            <div class="equipment-card fade-in"><div class="equipment-card-bg"></div><div class="equipment-card-overlay"><div class="equipment-icon">🏋️</div><h3>Strength Zone</h3><p>Heavy-duty power racks, bench presses, and plate-loaded machines for serious lifters.</p></div></div>
+            <div class="equipment-card fade-in"><div class="equipment-card-bg"></div><div class="equipment-card-overlay"><div class="equipment-icon">💪</div><h3>Dumbbell Section</h3><p>Full range of dumbbells from light to heavy, with ample bench space for every exercise.</p></div></div>
+            <div class="equipment-card fade-in"><div class="equipment-card-bg"></div><div class="equipment-card-overlay"><div class="equipment-icon">🦵</div><h3>Leg Section</h3><p>Comprehensive leg training with squat racks, leg presses, hack squats, and extension machines.</p></div></div>
+            <div class="equipment-card fade-in"><div class="equipment-card-bg"></div><div class="equipment-card-overlay"><div class="equipment-icon">🏃</div><h3>Cardio Area</h3><p>Treadmills, cross-trainers, and spin bikes to keep your heart pumping and calories burning.</p></div></div>
+            <div class="equipment-card fade-in"><div class="equipment-card-bg"></div><div class="equipment-card-overlay"><div class="equipment-icon">🤸</div><h3>Functional Training</h3><p>Battle ropes, kettlebells, TRX, and open floor space for dynamic workouts and mobility.</p></div></div>
+            <div class="equipment-card fade-in"><div class="equipment-card-bg"></div><div class="equipment-card-overlay"><div class="equipment-icon">🧘</div><h3>Stretching Zone</h3><p>Dedicated recovery area with mats, foam rollers, and space for post-workout stretching.</p></div></div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="reviews">
+        <div class="section-header fade-in">
+            <span class="section-tag" style="color: var(--gold);">Testimonials</span>
+            <h2 class="section-title">What Our Members Say</h2>
+            <p class="section-desc">Real feedback from real members who transformed their lives at Phoenix Fitness.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Best gym on Bajwa Road at this price point! The trainers are incredibly supportive and the equipment is top-notch. Jignesh sir personally guides everyone. Worth every rupee!"</p>
+                <div class="testimonial-author">Rahul Patel</div>
+                <div class="testimonial-role">Member since 2024</div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"I have been to many gyms in Vadodara, but Phoenix Fitness stands out. The trainers are so kind and helpful. Arshdeep bhaiya helped me gain 8kg muscle in 3 months. Highly recommended!"</p>
+                <div class="testimonial-author">Vikas Sharma</div>
+                <div class="testimonial-role">Member since 2025</div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"For just 1200 per month, you get access to 30+ machines and personal attention from trainers. This is the best value gym in Vadodara. The atmosphere is motivating and the facility is always clean."</p>
+                <div class="testimonial-author">Amit Desai</div>
+                <div class="testimonial-role">Member since 2025</div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Personal training here is exceptional. Jignesh sir customized my workout plan and diet. Lost 15kg in 4 months! The trainers are patient, knowledgeable, and genuinely care about your progress."</p>
+                <div class="testimonial-author">Priya Mehta</div>
+                <div class="testimonial-role">Member since 2024</div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Premium gym vibes at an affordable price. The equipment is well-maintained, the place is hygienic, and the trainers are always ready to help. Best decision to join Phoenix Fitness!"</p>
+                <div class="testimonial-author">Karan Joshi</div>
+                <div class="testimonial-role">Member since 2025</div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"The trainers are not just professionals, they are like family. Always encouraging, never judging. Arshdeep bhaiya helped me with my form and now I am lifting weights I never thought possible."</p>
+                <div class="testimonial-author">Sneha Rao</div>
+                <div class="testimonial-role">Member since 2025</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="awards">
+        <div class="section-header fade-in">
+            <span class="section-tag">Why Choose Us</span>
+            <h2 class="section-title">The Phoenix Advantage</h2>
+        </div>
+        <div class="awards-grid">
+            <div class="award-item fade-in">
+                <div class="award-icon">🏆</div>
+                <div class="award-title">#1 on Bajwa Road</div>
+                <div class="award-desc">Highest rated gym in the area with premium facilities at unbeatable prices.</div>
+            </div>
+            <div class="award-item fade-in">
+                <div class="award-icon">💪</div>
+                <div class="award-title">30+ Machines</div>
+                <div class="award-desc">State-of-the-art equipment covering strength, cardio, and functional training.</div>
+            </div>
+            <div class="award-item fade-in">
+                <div class="award-icon">🤝</div>
+                <div class="award-title">Supportive Trainers</div>
+                <div class="award-desc">Kind, patient, and professional trainers who genuinely care about your progress.</div>
+            </div>
+            <div class="award-item fade-in">
+                <div class="award-icon">💰</div>
+                <div class="award-title">Best Value</div>
+                <div class="award-desc">Only ₹1,200/month for full access. No hidden charges, no compromise on quality.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section location" id="location">
+        <div class="section-header fade-in">
+            <span class="section-tag">Find Us</span>
+            <h2 class="section-title">Visit Phoenix Fitness</h2>
+            <p class="section-desc">Located in the heart of Sayajipura, easily accessible from Bajwa Road.</p>
+        </div>
+        <div class="location-container fade-in">
+            <div class="location-info">
+                <h3>📍 Get In Touch</h3>
+                <div class="location-detail">
+                    <div class="location-icon">🏢</div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>42, Ambika Darshan 2<br>Sayajipura<br>Vadodara, 390019<br>Gujarat, India</p>
+                    </div>
+                </div>
+                <div class="location-detail">
+                    <div class="location-icon">📞</div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:7041098601" style="color: var(--text); text-decoration: none; font-weight: 600;">+91 70410 98601</a></p>
+                    </div>
+                </div>
+                <div class="location-detail">
+                    <div class="location-icon">⏰</div>
+                    <div>
+                        <h4>Operating Hours</h4>
+                        <p>Morning: Regular Timings<br>Evening: 6:00 PM — 9:40 PM (Summer)<br>Open 7 Days a Week</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">🗺️ Phoenix Fitness</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1rem;">42, Ambika Darshan 2, Sayajipura, Vadodara</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Ambika+Darshan+2+Sayajipura+Vadodara" target="_blank">Open in Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="contact-container fade-in">
+            <span class="section-tag">Ready To Transform?</span>
+            <h2 class="section-title">Start Your Journey Today</h2>
+            <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">Call or WhatsApp us to join Phoenix Fitness</p>
+            <a href="tel:7041098601" class="contact-phone">70410 98601</a>
+            <div class="contact-buttons">
+                <a href="https://wa.me/917041098601" class="contact-btn whatsapp" target="_blank">💬 WhatsApp</a>
+                <a href="tel:7041098601" class="contact-btn call">📞 Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">PHOENIX <span>FITNESS</span></div>
+        <div class="footer-social">
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">📘</a>
+            <a href="#" class="social-link">▶️</a>
+        </div>
+        <p>42, Ambika Darshan 2, Sayajipura, Vadodara, 390019 | Owned by Jignesh Adiyal</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">No Pain, No Gain. Transform Your Body.</p>
+    </footer>
+
+    <div class="floating-cta">
+        <a href="https://wa.me/917041098601" class="floating-btn whatsapp" target="_blank" title="WhatsApp">💬</a>
+        <a href="tel:7041098601" class="floating-btn call" title="Call Now">📞</a>
+    </div>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+            nav.style.position = 'absolute'; nav.style.top = '100%'; nav.style.left = '0'; nav.style.right = '0';
+            nav.style.flexDirection = 'column'; nav.style.background = 'rgba(255,255,255,0.98)';
+            nav.style.padding = '2rem'; nav.style.gap = '1.5rem'; nav.style.borderBottom = '1px solid #e2e8f0';
+            nav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+        }
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function(e) { e.preventDefault(); document.querySelector(this.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+        });
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').style.background = window.scrollY > 50 ? 'rgba(255,255,255,0.98)' : 'rgba(255,255,255,0.95)';
+        });
+    </script>
+</body>
+</html>Welcome! This is an offline-capable Notepad which is a Progressive Web App.
+
+The app serves the following features:
+
+- Your notes are saved in real-time as you type.
+- Installable on supported browsers for offline usage.
+- "Add To Home Screen" feature on Android-supported devices to launch the app from the home screen.
+- Dark mode.
+- Privacy-focused - Never collects your precious data.
+- Light-weight - Loads almost instantly.
+- Writing timer.
+- View Note Statistics.
+- Snapshots.
+- Ability to mimic typewriter sound when typing.
+- Optional break reminders after long writing sessions.
+- Keyboard shortcuts for common actions.
+- Focus mode to leave you with a barebones and pristine editor.
+- Full-screen mode for a distraction-free writing experience.
+- Floating window (in supported browsers) to effectively take notes across other apps.
+- Download notes as plain text, PDF, HTML, and DOCX file.
+- Ability to play ambient noise to help you focus.
+- It's proudly open-source!
+
+CAUTION: Since the app uses the browser's localStorage to store your notes, 
+it's recommended that you take a backup of your notes more often using the 
+"Download Notes" button or by pressing the "ctrl/command + s" keys.
+
+Lastly, if you're using Notepad, and want to support the development, 
+you can buy me a coffee — the link of which is available in the About section.
+
+** Delete this text and start writing your notes **</pre>
+        </body>
+    </html>
